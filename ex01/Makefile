@@ -1,4 +1,4 @@
-SRC = main.cpp newZombie.cpp zombie.cpp randomChump.cpp
+SRC = main.cpp zombie.cpp zombieHorde.cpp
 OBJ = $(SRC:.cpp=.o)
 CC = g++
 RM = rm -f
