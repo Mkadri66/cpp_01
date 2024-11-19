@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombie.hpp                                         :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkadri <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/19 19:20:15 by mkadri            #+#    #+#             */
-/*   Updated: 2024/10/21 11:51:44 by mkadri           ###   ########.fr       */
+/*   Created: 2024/10/21 11:58:52 by mkadri            #+#    #+#             */
+/*   Updated: 2024/11/08 13:04:29 by mkadri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,13 @@ class   Zombie {
         
     public:
         Zombie(std::string name);
+        Zombie(void);
         ~Zombie(void);
         void    announce();
+        void    setName(std::string name);
     
 };
+
+Zombie*    zombieHorde(int n, std::string name);
 
 #endif
